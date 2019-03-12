@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:id="@+id/movieImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:text="Movie Name"
+                android:textColor="@color/Black"
+                android:layout_toEndOf="@+id/movieImage"
+                android:layout_toRightOf="@+id/movieImage"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/movieName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="desc"
+                android:textSize="12sp"
+                android:textColor="@color/Silver"
+                android:layout_toEndOf="@+id/movieImage"
+                android:layout_toRightOf="@+id/movieImage"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/movieName"
+                android:layout_marginTop="10dp"
+                android:id="@+id/movieDesc"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/movieImage"
+                android:layout_toRightOf="@+id/movieImage"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rating"
+                    android:textColor="@color/colorAccent"
+                    android:background="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/movieRating"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/movieRating"
+                    android:layout_toEndOf="@id/movieRating"
+                    android:layout_toStartOf="@id/movieLang"
+                    android:layout_toLeftOf="@id/movieLang"
+                    android:text="release date"
+                    android:textSize="14sp"
+                    android:textColor="@color/Black"
+                    android:id="@+id/movieReleaseDate"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lang"
+                    android:textColor="@color/colorAccent"
+                    android:background="@color/Red"
+                    android:textSize="14sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/movieLang"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
